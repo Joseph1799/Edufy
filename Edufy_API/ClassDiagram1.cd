@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Edufy_API.WebApiConfig">
+    <Position X="4.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Start\WebApiConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Edufy_API.WebApiApplication">
+    <Position X="4.5" Y="2" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Global.asax.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Edufy_API.Controllers.EstudianteController">
+    <Position X="7.25" Y="5.75" Width="1.75" />
+    <NestedTypes>
+      <Class Name="Edufy_API.Controllers.EstudianteController.LoginRequest" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Controllers\EstudianteController.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Controllers\EstudianteController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Edufy_API.Controllers.ProfesorController">
+    <Position X="10" Y="5.75" Width="1.75" />
+    <NestedTypes>
+      <Class Name="Edufy_API.Controllers.ProfesorController.LoginRequest" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Controllers\ProfesorController.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\ProfesorController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Edufy_API.Data_Access.Connection">
+    <Position X="4.5" Y="3.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Data_Access\Connection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Edufy_API.Data_Access.EstudianteDAO">
+    <Position X="7.25" Y="4" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAQ=</HashCode>
+      <FileName>Data_Access\EstudianteDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Edufy_API.Data_Access.ProfesorDAO">
+    <Position X="10" Y="4" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAQ=</HashCode>
+      <FileName>Data_Access\ProfesorDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Edufy_API.Models.Estudiante">
+    <Position X="7.25" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>EAgCAAAAAAAAEABEAAAAgAIAAABAAgAAQBAAAAAAAAA=</HashCode>
+      <FileName>Models\Estudiante.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Edufy_API.Models.Profesor">
+    <Position X="10" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>EAgCAAAAAAAAEABEAAAAgAIAAAAAAgAAABAAAAAAAAA=</HashCode>
+      <FileName>Models\Profesor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

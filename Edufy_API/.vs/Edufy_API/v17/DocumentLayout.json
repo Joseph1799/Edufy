@@ -27,7 +27,7 @@
       "RelativeMoniker": "D:0:0:{E1EDE8A4-BF1D-487A-8CEC-32F2E8C654FA}|Edufy_API.csproj|solutionrelative:models\\estudiante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1EDE8A4-BF1D-487A-8CEC-32F2E8C654FA}|Edufy_API.csproj|c:\\users\\josep\\documents\\visual studio\\edufy\\edufy_api\\data_access\\connection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E1EDE8A4-BF1D-487A-8CEC-32F2E8C654FA}|Edufy_API.csproj|C:\\Users\\josep\\Documents\\Visual Studio\\Edufy\\Edufy_API\\data_access\\connection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E1EDE8A4-BF1D-487A-8CEC-32F2E8C654FA}|Edufy_API.csproj|solutionrelative:data_access\\connection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -74,7 +74,7 @@
               "RelativeDocumentMoniker": "Controllers\\ProfesorController.cs",
               "ToolTip": "C:\\Users\\josep\\Documents\\Visual Studio\\Edufy\\Edufy_API\\Controllers\\ProfesorController.cs",
               "RelativeToolTip": "Controllers\\ProfesorController.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAzwCkAAABvAAAA",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAwDMAAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-25T09:35:04.626Z",
               "EditorCaption": ""
