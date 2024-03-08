@@ -19,7 +19,5 @@ Edufy es una plataforma educativa diseñada para mejorar la experiencia de apren
 
 Este proyecto está bajo la Licencia [MIT](https://opensource.org/licenses/MIT).
 
-## Contacto
 
-Para más información, contacta a [nombre-de-contacto](mailto:correo-de-contacto@dominio.com).
 
