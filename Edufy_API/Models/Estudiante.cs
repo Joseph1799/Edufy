@@ -23,7 +23,7 @@ namespace Edufy_API.Models
         public string Contrasenia { get; set; }
 
         [Required]
-        public DateTime FechaNacimiento { get; set; }
+        public string FechaNacimiento { get; set; }
 
         [Required]
         public string Genero { get; set; }
@@ -35,9 +35,9 @@ namespace Edufy_API.Models
         public int AnioIngreso { get; set; }
 
         [Required]
-        public bool EstadoCuenta { get; set; }
+        public string EstadoCuenta { get; set; }
 
-        public byte[] FotoPerfil { get; set; }
+        public string FotoPerfil { get; set; }
 
         [Required]
         public string Rol { get; set; }
