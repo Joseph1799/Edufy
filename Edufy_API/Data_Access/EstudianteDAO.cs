@@ -53,7 +53,7 @@ namespace Edufy_API.Data_Access
         public static Estudiante Login(string correoElectronico, string contrasenia, string rol)
         {
             string connectionString = Connection.connectionRoute;
-            string query = "SELECT Id FROM Estudiante WHERE CorreoElectronico = @CorreoElectronico AND Contrasenia = @Contrasenia AND Rol = @Rol";
+            string query = "SELECT Id, CorreoElectronico, Rol FROM Estudiante WHERE CorreoElectronico = @CorreoElectronico AND Contrasenia = @Contrasenia AND Rol = @Rol";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -68,8 +68,13 @@ namespace Edufy_API.Data_Access
                     SqlDataReader reader = command.ExecuteReader();
                     if (reader.Read())
                     {
-                        int id = (int)reader["Id"];
-                        return new Estudiante { Id = id };
+                        Estudiante estudiante = new Estudiante
+                        {
+                            Id = (int)reader["Id"],
+                            CorreoElectronico = reader["CorreoElectronico"].ToString(),
+                            Rol = reader["Rol"].ToString(),
+                        };
+                        return estudiante;
                     }
                     else
                     {
@@ -133,7 +138,38 @@ namespace Edufy_API.Data_Access
             }
         }
 
-        public static bool Modificar(Estudiante estudiante)
+        public static bool ModificarEstudiante(Estudiante estudiante)
+        {
+            string connectionString = Connection.connectionRoute;
+            string query = @"UPDATE Estudiante SET Nombre = @Nombre, Apellido = @Apellido,
+            CorreoElectronico = @CorreoElectronico, FechaNacimiento = @FechaNacimiento,
+            AnioIngreso = @AnioIngreso, Genero = @Genero WHERE Id = @Id";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@Id", estudiante.Id);
+                command.Parameters.AddWithValue("@Nombre", estudiante.Nombre);
+                command.Parameters.AddWithValue("@Apellido", estudiante.Apellido);
+                command.Parameters.AddWithValue("@CorreoElectronico", estudiante.CorreoElectronico);
+                command.Parameters.AddWithValue("@FechaNacimiento", estudiante.FechaNacimiento);
+                command.Parameters.AddWithValue("@AnioIngreso", estudiante.AnioIngreso);
+                command.Parameters.AddWithValue("@Genero", estudiante.Genero);
+                try
+                {
+                    connection.Open();
+                    int rowsAffected = command.ExecuteNonQuery();
+                    return rowsAffected > 0;
+                }
+                catch (Exception ex)
+                {
+                    // Manejo de excepciones
+                    return false;
+                }
+            }
+        }
+
+        public static bool ModificarContrasenia(Estudiante estudiante)
         {
             string connectionString = Connection.connectionRoute;
             string query = @"UPDATE Estudiante SET Contrasenia = @Contrasenia WHERE Id = @Id";

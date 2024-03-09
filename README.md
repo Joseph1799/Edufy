@@ -21,5 +21,5 @@ Este proyecto está bajo la Licencia [MIT](https://opensource.org/licenses/MIT).
 
 ## Contacto
 
-Para más información, contacta a [nombre-de-contacto](mailto:correo-de-contacto@dominio.com).
+Para más información, contacta a Joseph1799us@gmail.com.
 

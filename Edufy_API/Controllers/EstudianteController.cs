@@ -56,7 +56,9 @@ namespace Edufy_API.Controllers
             {
                 Subject = new ClaimsIdentity(new Claim[]
                 {
-            new Claim(ClaimTypes.Name, estudiante.Id.ToString())
+            new Claim(ClaimTypes.Name, estudiante.Id.ToString()),
+            new Claim("CorreoElectronico", estudiante.CorreoElectronico),
+            new Claim("Rol", loginRequest.Rol)
                 }),
                 Expires = DateTime.UtcNow.AddHours(1),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
@@ -170,7 +172,7 @@ namespace Edufy_API.Controllers
                 var id = int.Parse(idClaim.Value);
                 estudiante.Id = id; // Asignar el Id del estudiante desde el token al objeto estudiante
 
-                if (!EstudianteDAO.Modificar(estudiante))
+                if (!EstudianteDAO.ModificarEstudiante(estudiante))
                 {
                     return InternalServerError(new Exception("No se pudo modificar al estudiante"));
                 }
@@ -224,7 +226,7 @@ namespace Edufy_API.Controllers
                 var id = int.Parse(idClaim.Value);
                 estudiante.Id = id; // Asignar el Id del estudiante desde el token al objeto estudiante
 
-                if (!EstudianteDAO.Modificar(estudiante))
+                if (!EstudianteDAO.ModificarContrasenia(estudiante))
                 {
                     return InternalServerError(new Exception("No se pudo modificar al estudiante"));
                 }

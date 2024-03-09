@@ -46,10 +46,10 @@ namespace Edufy_API.Data_Access
             }
         }
 
-        public static bool Login(string correoElectronico, string contrasenia, string rol)
+        public static Profesor Login(string correoElectronico, string contrasenia, string rol)
         {
             string connectionString = Connection.connectionRoute;
-            string query = "SELECT COUNT(1) FROM Profesor WHERE CorreoElectronico = @CorreoElectronico AND Contrasenia = @Contrasenia AND Rol = @Rol";
+            string query = "SELECT Id, CorreoElectronico, Rol FROM Profesor WHERE CorreoElectronico = @CorreoElectronico AND Contrasenia = @Contrasenia AND Rol = @Rol";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -61,8 +61,103 @@ namespace Edufy_API.Data_Access
                 try
                 {
                     connection.Open();
-                    int count = (int)command.ExecuteScalar();
-                    return count > 0;
+                    SqlDataReader reader = command.ExecuteReader();
+                    if (reader.Read())
+                    {
+                        Profesor profesor = new Profesor
+                        {
+                            Id = (int)reader["Id"],
+                            CorreoElectronico = reader["CorreoElectronico"].ToString(),
+                            Rol = reader["Rol"].ToString(),
+                        };
+                        return profesor;
+                    }
+                    else
+                    {
+                        return null;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    // Manejo de excepciones
+                    return null;
+                }
+            }
+        }
+
+
+        public static Profesor GetProfesorById(int id)
+        {
+            string connectionString = Connection.connectionRoute;
+            string query = "SELECT * FROM Profesor WHERE Id = @Id";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@Id", id);
+
+                try
+                {
+                    connection.Open();
+                    SqlDataReader reader = command.ExecuteReader();
+                    if (reader.Read())
+                    {
+                        // Crear un objeto Estudiante con los datos de la base de datos
+                        Profesor profesor = new Profesor
+                        {
+                            Id = (int)reader["Id"],
+                            Nombre = (string)reader["Nombre"],
+                            Apellido = (string)reader["Apellido"],
+                            CorreoElectronico = (string)reader["CorreoElectronico"],
+                            Contrasenia = (string)reader["Contrasenia"],
+                            FechaNacimiento = ((DateTime)reader["FechaNacimiento"]).ToString("yyyy-MM-dd"),
+                            Genero = (string)reader["Genero"],
+                            Departamento = (string)reader["Departamento"],
+                            TituloAcademico = (string)reader["TituloAcademico"],
+                            EstadoCuenta = (string)reader["EstadoCuenta"],
+                            FotoPerfil = (string)reader["FotoPerfil"],
+                            Rol = (string)reader["Rol"],
+                        };
+                        return profesor;
+                    }
+                    else
+                    {
+                        return null;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    // Manejo de excepciones
+                    return null;
+                }
+            }
+        }
+
+
+        public static bool ModificarProfesor(Profesor profesor)
+        {
+            string connectionString = Connection.connectionRoute;
+            string query = @"UPDATE Profesor SET Nombre = @Nombre, Apellido = @Apellido,
+            CorreoElectronico = @CorreoElectronico, FechaNacimiento = @FechaNacimiento,
+            Genero = @Genero, Departamento = @Departamento, TituloAcademico = @TituloAcademico 
+            WHERE Id = @Id";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@Id", profesor.Id);
+                command.Parameters.AddWithValue("@Nombre", profesor.Nombre);
+                command.Parameters.AddWithValue("@Apellido", profesor.Apellido);
+                command.Parameters.AddWithValue("@CorreoElectronico", profesor.CorreoElectronico);
+                command.Parameters.AddWithValue("@FechaNacimiento", profesor.FechaNacimiento);
+                command.Parameters.AddWithValue("@Genero", profesor.Genero);
+                command.Parameters.AddWithValue("@Departamento", profesor.Departamento);
+                command.Parameters.AddWithValue("@TituloAcademico", profesor.TituloAcademico);
+                try
+                {
+                    connection.Open();
+                    int rowsAffected = command.ExecuteNonQuery();
+                    return rowsAffected > 0;
                 }
                 catch (Exception ex)
                 {
@@ -72,5 +167,32 @@ namespace Edufy_API.Data_Access
             }
         }
 
+        public static bool ModificarContrasenia(Profesor profesor)
+        {
+            string connectionString = Connection.connectionRoute;
+            string query = @"UPDATE Profesor SET Contrasenia = @Contrasenia WHERE Id = @Id";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@Id", profesor.Id);
+                command.Parameters.AddWithValue("@Contrasenia", profesor.Contrasenia);
+
+                try
+                {
+                    connection.Open();
+                    int rowsAffected = command.ExecuteNonQuery();
+                    return rowsAffected > 0;
+                }
+                catch (Exception ex)
+                {
+                    // Manejo de excepciones
+                    return false;
+                }
+            }
+        }
+
+
     }
 }
+

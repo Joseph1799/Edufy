@@ -379,7 +379,7 @@
                   </div>
 
                   <div class="row">
-                    <div class="col-lg-3 col-md-4 label">Año de Ingreso</div>
+                    <div id="anioIngreso-departamento" class="col-lg-3 col-md-4 label"></div>
                     <div id="profile-issued" class="col-lg-9 col-md-8"></div>
                   </div>
 
@@ -417,15 +417,14 @@
                     <div class="row mb-3">
                       <label for="profile-email2" class="col-md-4 col-lg-3 col-form-label">Correo Electrónico</label>
                       <div class="col-md-8 col-lg-9">
-                        <input name="profile-email2" type="text" class="form-control" id="profile-email2" value=""
-                          readonly>
+                        <input name="profile-email2" type="text" class="form-control" id="profile-email2" value="">
                       </div>
                     </div>
 
                     <div class="row mb-3">
                       <label for="profile-id2" class="col-md-4 col-lg-3 col-form-label">Cédula</label>
                       <div class="col-md-8 col-lg-9">
-                        <input name="profile-id2" type="text" class="form-control" id="profile-id2" value="" readonly>
+                        <input name="profile-id2" type="text" class="form-control" id="profile-id2" value="">
                       </div>
                     </div>
 
@@ -439,9 +438,17 @@
                     </div>
 
                     <div class="row mb-3">
-                      <label for="profile-issued2" class="col-md-4 col-lg-3 col-form-label">Año de Ingreso</label>
+                      <label id="anioIngreso-departamento2" for="profile-issued2"
+                        class="col-md-4 col-lg-3 col-form-label"></label>
                       <div class="col-md-8 col-lg-9">
                         <input name="profile-issued2" type="text" class="form-control" id="profile-issued2" value="">
+                      </div>
+                    </div>
+
+                    <div id="profesor-element" class="row mb-3">
+                      <label for="academic-title" class="col-md-4 col-lg-3 col-form-label">Título Académico</label>
+                      <div class="col-md-8 col-lg-9">
+                        <input name="academic-title" type="text" class="form-control" id="academic-title" value="">
                       </div>
                     </div>
 
@@ -544,7 +551,6 @@
 
   </main><!-- End #main -->
 
-
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
 
@@ -558,9 +564,9 @@
   <script src="assets/vendor/tinymce/tinymce.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
-  <!-- Template user JS File -->
-  <script src="assets/js/user.js"></script>
-
+  <!-- Scripts -->
+  <script src="assets/js/estudiante-profile.js"></script>
+  <script src="assets/js/profesor-profile.js"></script>
 
 </body>
 
