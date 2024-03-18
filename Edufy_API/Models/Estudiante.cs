@@ -8,6 +8,7 @@ namespace Edufy_API.Models
 {
     public class Estudiante
     {
+        [Key]
         public int Id { get; set; }
 
         [Required]

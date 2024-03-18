@@ -139,14 +139,20 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\EstudianteController.cs" />
     <Compile Include="Controllers\ProfesorController.cs" />
+    <Compile Include="Controllers\CursoController.cs" />
+    <Compile Include="Controllers\TareaController.cs" />
     <Compile Include="Data_Access\Connection.cs" />
+    <Compile Include="Data_Access\CursoDAO.cs" />
     <Compile Include="Data_Access\EstudianteDAO.cs" />
     <Compile Include="Data_Access\ProfesorDAO.cs" />
+    <Compile Include="Data_Access\TareaDAO.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Curso.cs" />
     <Compile Include="Models\Profesor.cs" />
     <Compile Include="Models\Estudiante.cs" />
+    <Compile Include="Models\Tarea.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

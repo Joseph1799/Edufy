@@ -8,6 +8,7 @@ namespace Edufy_API.Models
 {
     public class Profesor
     {
+        [Key]
         public int Id { get; set; }
 
         [Required]

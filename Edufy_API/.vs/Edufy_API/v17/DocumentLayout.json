@@ -3,28 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\josep\\Documents\\Visual Studio\\Edufy\\Edufy_API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E1EDE8A4-BF1D-487A-8CEC-32F2E8C654FA}|Edufy_API.csproj|c:\\users\\josep\\documents\\visual studio\\edufy\\edufy_api\\data_access\\profesordao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1EDE8A4-BF1D-487A-8CEC-32F2E8C654FA}|Edufy_API.csproj|solutionrelative:data_access\\profesordao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E1EDE8A4-BF1D-487A-8CEC-32F2E8C654FA}|Edufy_API.csproj|c:\\users\\josep\\documents\\visual studio\\edufy\\edufy_api\\controllers\\tareacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1EDE8A4-BF1D-487A-8CEC-32F2E8C654FA}|Edufy_API.csproj|solutionrelative:controllers\\tareacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1EDE8A4-BF1D-487A-8CEC-32F2E8C654FA}|Edufy_API.csproj|c:\\users\\josep\\documents\\visual studio\\edufy\\edufy_api\\controllers\\profesorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1EDE8A4-BF1D-487A-8CEC-32F2E8C654FA}|Edufy_API.csproj|solutionrelative:controllers\\profesorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E1EDE8A4-BF1D-487A-8CEC-32F2E8C654FA}|Edufy_API.csproj|c:\\users\\josep\\documents\\visual studio\\edufy\\edufy_api\\data_access\\tareadao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1EDE8A4-BF1D-487A-8CEC-32F2E8C654FA}|Edufy_API.csproj|solutionrelative:data_access\\tareadao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1EDE8A4-BF1D-487A-8CEC-32F2E8C654FA}|Edufy_API.csproj|c:\\users\\josep\\documents\\visual studio\\edufy\\edufy_api\\controllers\\estudiantecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1EDE8A4-BF1D-487A-8CEC-32F2E8C654FA}|Edufy_API.csproj|solutionrelative:controllers\\estudiantecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E1EDE8A4-BF1D-487A-8CEC-32F2E8C654FA}|Edufy_API.csproj|c:\\users\\josep\\documents\\visual studio\\edufy\\edufy_api\\data_access\\cursodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1EDE8A4-BF1D-487A-8CEC-32F2E8C654FA}|Edufy_API.csproj|solutionrelative:data_access\\cursodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1EDE8A4-BF1D-487A-8CEC-32F2E8C654FA}|Edufy_API.csproj|c:\\users\\josep\\documents\\visual studio\\edufy\\edufy_api\\data_access\\estudiantedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1EDE8A4-BF1D-487A-8CEC-32F2E8C654FA}|Edufy_API.csproj|solutionrelative:data_access\\estudiantedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E1EDE8A4-BF1D-487A-8CEC-32F2E8C654FA}|Edufy_API.csproj|C:\\Users\\josep\\Documents\\Visual Studio\\Edufy\\Edufy_API\\controllers\\cursocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1EDE8A4-BF1D-487A-8CEC-32F2E8C654FA}|Edufy_API.csproj|solutionrelative:controllers\\cursocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1EDE8A4-BF1D-487A-8CEC-32F2E8C654FA}|Edufy_API.csproj|c:\\users\\josep\\documents\\visual studio\\edufy\\edufy_api\\models\\profesor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1EDE8A4-BF1D-487A-8CEC-32F2E8C654FA}|Edufy_API.csproj|solutionrelative:models\\profesor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E1EDE8A4-BF1D-487A-8CEC-32F2E8C654FA}|Edufy_API.csproj|c:\\users\\josep\\documents\\visual studio\\edufy\\edufy_api\\models\\tarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1EDE8A4-BF1D-487A-8CEC-32F2E8C654FA}|Edufy_API.csproj|solutionrelative:models\\tarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1EDE8A4-BF1D-487A-8CEC-32F2E8C654FA}|Edufy_API.csproj|C:\\Users\\josep\\Documents\\Visual Studio\\Edufy\\Edufy_API\\models\\estudiante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1EDE8A4-BF1D-487A-8CEC-32F2E8C654FA}|Edufy_API.csproj|solutionrelative:models\\estudiante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E1EDE8A4-BF1D-487A-8CEC-32F2E8C654FA}|Edufy_API.csproj|C:\\Users\\josep\\Documents\\Visual Studio\\Edufy\\Edufy_API\\models\\curso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1EDE8A4-BF1D-487A-8CEC-32F2E8C654FA}|Edufy_API.csproj|solutionrelative:models\\curso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -33,91 +33,91 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 206,
-          "SelectedChildIndex": 4,
+          "DockedWidth": 306,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Profesor.cs",
-              "DocumentMoniker": "C:\\Users\\josep\\Documents\\Visual Studio\\Edufy\\Edufy_API\\Models\\Profesor.cs",
-              "RelativeDocumentMoniker": "Models\\Profesor.cs",
-              "ToolTip": "C:\\Users\\josep\\Documents\\Visual Studio\\Edufy\\Edufy_API\\Models\\Profesor.cs",
-              "RelativeToolTip": "Models\\Profesor.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACoAAAAcAAAA",
+              "Title": "Tarea.cs",
+              "DocumentMoniker": "C:\\Users\\josep\\Documents\\Visual Studio\\Edufy\\Edufy_API\\Models\\Tarea.cs",
+              "RelativeDocumentMoniker": "Models\\Tarea.cs",
+              "ToolTip": "C:\\Users\\josep\\Documents\\Visual Studio\\Edufy\\Edufy_API\\Models\\Tarea.cs",
+              "RelativeToolTip": "Models\\Tarea.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-08T19:11:21.993Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Estudiante.cs",
-              "DocumentMoniker": "C:\\Users\\josep\\Documents\\Visual Studio\\Edufy\\Edufy_API\\Models\\Estudiante.cs",
-              "RelativeDocumentMoniker": "Models\\Estudiante.cs",
-              "ToolTip": "C:\\Users\\josep\\Documents\\Visual Studio\\Edufy\\Edufy_API\\Models\\Estudiante.cs",
-              "RelativeToolTip": "Models\\Estudiante.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-19T01:46:01.982Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "EstudianteController.cs",
-              "DocumentMoniker": "C:\\Users\\josep\\Documents\\Visual Studio\\Edufy\\Edufy_API\\Controllers\\EstudianteController.cs",
-              "RelativeDocumentMoniker": "Controllers\\EstudianteController.cs",
-              "ToolTip": "C:\\Users\\josep\\Documents\\Visual Studio\\Edufy\\Edufy_API\\Controllers\\EstudianteController.cs",
-              "RelativeToolTip": "Controllers\\EstudianteController.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAAAQwD0AAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-08T21:15:17.054Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "EstudianteDAO.cs",
-              "DocumentMoniker": "C:\\Users\\josep\\Documents\\Visual Studio\\Edufy\\Edufy_API\\Data_Access\\EstudianteDAO.cs",
-              "RelativeDocumentMoniker": "Data_Access\\EstudianteDAO.cs",
-              "ToolTip": "C:\\Users\\josep\\Documents\\Visual Studio\\Edufy\\Edufy_API\\Data_Access\\EstudianteDAO.cs",
-              "RelativeToolTip": "Data_Access\\EstudianteDAO.cs",
-              "ViewState": "AQIAAC8AAAAAAAAAAAAawEYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-19T01:44:36.379Z",
+              "WhenOpened": "2024-03-17T21:36:33.249Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ProfesorDAO.cs",
-              "DocumentMoniker": "C:\\Users\\josep\\Documents\\Visual Studio\\Edufy\\Edufy_API\\Data_Access\\ProfesorDAO.cs",
-              "RelativeDocumentMoniker": "Data_Access\\ProfesorDAO.cs",
-              "ToolTip": "C:\\Users\\josep\\Documents\\Visual Studio\\Edufy\\Edufy_API\\Data_Access\\ProfesorDAO.cs",
-              "RelativeToolTip": "Data_Access\\ProfesorDAO.cs",
-              "ViewState": "AQIAAHoAAAAAAAAAAAAhwIoAAABBAAAA",
+              "Title": "TareaController.cs",
+              "DocumentMoniker": "C:\\Users\\josep\\Documents\\Visual Studio\\Edufy\\Edufy_API\\Controllers\\TareaController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TareaController.cs",
+              "ToolTip": "C:\\Users\\josep\\Documents\\Visual Studio\\Edufy\\Edufy_API\\Controllers\\TareaController.cs",
+              "RelativeToolTip": "Controllers\\TareaController.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAgwCYAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-08T19:11:19.941Z",
+              "WhenOpened": "2024-03-17T21:37:06.515Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TareaDAO.cs",
+              "DocumentMoniker": "C:\\Users\\josep\\Documents\\Visual Studio\\Edufy\\Edufy_API\\Data_Access\\TareaDAO.cs",
+              "RelativeDocumentMoniker": "Data_Access\\TareaDAO.cs",
+              "ToolTip": "C:\\Users\\josep\\Documents\\Visual Studio\\Edufy\\Edufy_API\\Data_Access\\TareaDAO.cs",
+              "RelativeToolTip": "Data_Access\\TareaDAO.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAYwEAAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T21:37:25.016Z",
               "EditorCaption": ""
             }
           ]
         },
         {
-          "DockedWidth": 206,
-          "SelectedChildIndex": 0,
+          "DockedWidth": 306,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ProfesorController.cs",
-              "DocumentMoniker": "C:\\Users\\josep\\Documents\\Visual Studio\\Edufy\\Edufy_API\\Controllers\\ProfesorController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ProfesorController.cs",
-              "ToolTip": "C:\\Users\\josep\\Documents\\Visual Studio\\Edufy\\Edufy_API\\Controllers\\ProfesorController.cs",
-              "RelativeToolTip": "Controllers\\ProfesorController.cs",
-              "ViewState": "AQIAAIUAAAAAAAAAAAAwwIkAAAAIAAAA",
+              "DocumentIndex": 5,
+              "Title": "Curso.cs",
+              "DocumentMoniker": "C:\\Users\\josep\\Documents\\Visual Studio\\Edufy\\Edufy_API\\Models\\Curso.cs",
+              "RelativeDocumentMoniker": "Models\\Curso.cs",
+              "ToolTip": "C:\\Users\\josep\\Documents\\Visual Studio\\Edufy\\Edufy_API\\Models\\Curso.cs",
+              "RelativeToolTip": "Models\\Curso.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-08T19:12:12.501Z",
+              "WhenOpened": "2024-03-16T23:49:10.383Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CursoController.cs",
+              "DocumentMoniker": "C:\\Users\\josep\\Documents\\Visual Studio\\Edufy\\Edufy_API\\Controllers\\CursoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CursoController.cs",
+              "ToolTip": "C:\\Users\\josep\\Documents\\Visual Studio\\Edufy\\Edufy_API\\Controllers\\CursoController.cs",
+              "RelativeToolTip": "Controllers\\CursoController.cs",
+              "ViewState": "AQIAADMAAAAAAAAAAAAYwEwAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-16T23:57:08.387Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CursoDAO.cs",
+              "DocumentMoniker": "C:\\Users\\josep\\Documents\\Visual Studio\\Edufy\\Edufy_API\\Data_Access\\CursoDAO.cs",
+              "RelativeDocumentMoniker": "Data_Access\\CursoDAO.cs",
+              "ToolTip": "C:\\Users\\josep\\Documents\\Visual Studio\\Edufy\\Edufy_API\\Data_Access\\CursoDAO.cs",
+              "RelativeToolTip": "Data_Access\\CursoDAO.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAYwC4AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-16T23:55:47.727Z",
               "EditorCaption": ""
             }
           ]

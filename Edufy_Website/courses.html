@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Users / Profile - NiceAdmin Bootstrap Template</title>
+  <title>Pages / Contact - NiceAdmin Bootstrap Template</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -46,8 +46,21 @@
       <i class="bi bi-list toggle-sidebar-btn"></i>
     </div><!-- End Logo -->
 
+    <div class="search-bar">
+      <form class="search-form d-flex align-items-center" method="POST" action="#">
+        <input type="text" name="query" placeholder="Buscar curso" title="Enter search keyword">
+        <button type="submit" title="Search"><i class="bi bi-search"></i></button>
+      </form>
+    </div><!-- End Search Bar -->
+
     <nav class="header-nav ms-auto">
       <ul class="d-flex align-items-center">
+
+        <li class="nav-item d-block d-lg-none">
+          <a class="nav-link nav-icon search-bar-toggle " href="#">
+            <i class="bi bi-search"></i>
+          </a>
+        </li><!-- End Search Icon-->
 
         <li class="nav-item dropdown">
 
@@ -58,8 +71,8 @@
 
           <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
             <li class="dropdown-header">
-              You have 4 new notifications
-              <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+              Tiene 4 notificaciones
+              <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">Ver todo</span></a>
             </li>
             <li>
               <hr class="dropdown-divider">
@@ -117,7 +130,7 @@
               <hr class="dropdown-divider">
             </li>
             <li class="dropdown-footer">
-              <a href="#">Show all notifications</a>
+              <a href="#">Mostrar todas las notificaciones</a>
             </li>
 
           </ul><!-- End Notification Dropdown Items -->
@@ -133,8 +146,8 @@
 
           <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
             <li class="dropdown-header">
-              You have 3 new messages
-              <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+              Tiene 3 mensajes nuevos
+              <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">Ver todo</span></a>
             </li>
             <li>
               <hr class="dropdown-divider">
@@ -183,7 +196,7 @@
             </li>
 
             <li class="dropdown-footer">
-              <a href="#">Show all messages</a>
+              <a href="#">Mostrar todos los mensajes</a>
             </li>
 
           </ul><!-- End Messages Dropdown Items -->
@@ -195,7 +208,8 @@
           <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
             <img id="profile-img" src="" alt="Profile" class="rounded-circle">
             <span id="profile-name" class="d-none d-md-block dropdown-toggle ps-2"></span>
-          </a><!-- End Profile Iamge Icon -->
+          </a>
+          <!-- End Profile Image Icon -->
 
           <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
             <li class="dropdown-header">
@@ -301,218 +315,32 @@
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>Perfil</h1>
+      <h1>Cursos</h1>
       <nav>
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="Dashboard.html">Inicio</a></li>
-          <li class="breadcrumb-item">Usuarios</li>
-          <li class="breadcrumb-item active">Perfil</li>
+          <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+          <li class="breadcrumb-item active">Cursos</li>
         </ol>
       </nav>
     </div><!-- End Page Title -->
 
-    <section class="section profile">
-      <div class="row">
-        <div class="col-xl-4">
+    <section class="section contact" id="cursosSection">
 
-          <div class="card">
-            <div class="card-body profile-card pt-4 d-flex flex-column align-items-center">
+      <div class="row" id="cursosRow">
 
-              <img id="profile-img-big" alt="Profile" class="rounded-circle">
-              <h2 id="profile-name3"></h2>
-              <h3 id="profile-career2"></h3>
+        <!--         <div class="col-md-3">
+          <div class="curso-card">
+            <img src="assets/img/card.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card with an image on top</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
             </div>
           </div>
+        </div> -->
 
-        </div>
-
-        <div class="col-xl-8">
-
-          <div class="card">
-            <div class="card-body pt-3">
-              <!-- Bordered Tabs -->
-              <ul class="nav nav-tabs nav-tabs-bordered">
-
-                <li class="nav-item">
-                  <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#profile-overview">Información
-                    General</button>
-                </li>
-
-                <li class="nav-item">
-                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#profile-edit">Editar Perfil</button>
-                </li>
-
-                <li class="nav-item">
-                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#profile-change-password">Cambiar
-                    Contraseña</button>
-                </li>
-
-              </ul>
-              <div class="tab-content pt-2">
-
-                <div class="tab-pane fade show active profile-overview" id="profile-overview">
-
-                  <h5 class="card-title">Detalles del Perfil</h5>
-
-                  <div class="row">
-                    <div class="col-lg-3 col-md-4 label ">Nombre Completo</div>
-                    <div id="profile-name4" class="col-lg-9 col-md-8"></div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-lg-3 col-md-4 label">Correo Electrónico</div>
-                    <div id="profile-email" class="col-lg-9 col-md-8"></div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-lg-3 col-md-4 label">Cédula</div>
-                    <div id="profile-id" class="col-lg-9 col-md-8"></div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-lg-3 col-md-4 label">Fecha de Nacimiento</div>
-                    <div id="profile-birth-date" class="col-lg-9 col-md-8"></div>
-                  </div>
-
-                  <div class="row">
-                    <div id="anioIngreso-departamento" class="col-lg-3 col-md-4 label"></div>
-                    <div id="profile-issued" class="col-lg-9 col-md-8"></div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-lg-3 col-md-4 label">Género</div>
-                    <div id="profile-gender" class="col-lg-9 col-md-8"></div>
-                  </div>
-
-                </div>
-
-                <div class="tab-pane fade profile-edit pt-3" id="profile-edit">
-
-                  <!-- Profile Edit Form -->
-                  <form>
-                    <div class="row mb-3">
-                      <label for="profileImage" class="col-md-4 col-lg-3 col-form-label">Foto de Perfil</label>
-                      <div class="col-md-8 col-lg-9">
-                        <img id="profile-img2" src="" alt="Profile">
-                        <div class="pt-2">
-                          <a href="#" class="btn btn-primary btn-sm" title="Subir una Nueva Foto de Perfil"><i
-                              class="bi bi-upload"></i></a>
-                          <a href="#" class="btn btn-danger btn-sm" title="Remover Foto de Perfil"><i
-                              class="bi bi-trash"></i></a>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="row mb-3">
-                      <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Nombre Completo</label>
-                      <div class="col-md-8 col-lg-9">
-                        <input name="fullName" type="text" class="form-control" id="fullName" value="">
-                      </div>
-                    </div>
-
-                    <div class="row mb-3">
-                      <label for="profile-email2" class="col-md-4 col-lg-3 col-form-label">Correo Electrónico</label>
-                      <div class="col-md-8 col-lg-9">
-                        <input name="profile-email2" type="text" class="form-control" id="profile-email2" value=""
-                          readonly style="cursor: default;">
-                      </div>
-                    </div>
-
-                    <div class="row mb-3">
-                      <label for="profile-id2" class="col-md-4 col-lg-3 col-form-label">Cédula</label>
-                      <div class="col-md-8 col-lg-9">
-                        <input name="profile-id2" type="text" class="form-control" id="profile-id2" value="" readonly
-                          style="cursor: default;">
-                      </div>
-                    </div>
-
-                    <div class="row mb-3">
-                      <label for="profile-birth-date2" class="col-md-4 col-lg-3 col-form-label">Fecha de
-                        Nacimiento</label>
-                      <div class="col-md-8 col-lg-9">
-                        <input name="profile-birth-date2" type="text" class="form-control" id="profile-birth-date2"
-                          value="">
-                      </div>
-                    </div>
-
-                    <div class="row mb-3">
-                      <label id="anioIngreso-departamento2" for="profile-issued2"
-                        class="col-md-4 col-lg-3 col-form-label"></label>
-                      <div class="col-md-8 col-lg-9">
-                        <input name="profile-issued2" type="text" class="form-control" id="profile-issued2" value="">
-                      </div>
-                    </div>
-
-                    <div id="profesor-element" class="row mb-3">
-                      <label for="academic-title" class="col-md-4 col-lg-3 col-form-label">Título Académico</label>
-                      <div class="col-md-8 col-lg-9">
-                        <input name="academic-title" type="text" class="form-control" id="academic-title" value="">
-                      </div>
-                    </div>
-
-                    <div class="row mb-3">
-                      <label for="profile-gender2" class="col-md-4 col-lg-3 col-form-label">Género</label>
-                      <div class="col-md-8 col-lg-9">
-                        <select name="profile-gender2" type="text" class="form-select" id="profile-gender2"
-                          style="cursor: pointer;">
-                          <option selected disabled id="profile-gender2"></option>
-                          <option value="Masculino">Masculino</option>
-                          <option value="Femenino">Femenino</option>
-                        </select>
-                      </div>
-                    </div>
-
-                    <div class="text-center">
-                      <button type="submit" class="btn btn-primary">Guardar Cambios</button>
-                    </div>
-                  </form><!-- End Profile Edit Form -->
-
-                </div>
-
-                <div class="tab-pane fade pt-3" id="profile-settings">
-
-                </div>
-
-                <div class="tab-pane fade pt-3" id="profile-change-password">
-                  <!-- Change Password Form -->
-                  <form>
-
-                    <div class="row mb-3">
-                      <label for="currentPassword" class="col-md-4 col-lg-3 col-form-label">Contraseña Actual</label>
-                      <div class="col-md-8 col-lg-9">
-                        <input name="password" type="password" class="form-control" id="currentPassword">
-                      </div>
-                    </div>
-
-                    <div class="row mb-3">
-                      <label for="newPassword" class="col-md-4 col-lg-3 col-form-label">Nueva Contraseña</label>
-                      <div class="col-md-8 col-lg-9">
-                        <input name="newpassword" type="password" class="form-control" id="newPassword">
-                      </div>
-                    </div>
-
-                    <div class="row mb-3">
-                      <label for="renewPassword" class="col-md-4 col-lg-3 col-form-label">Re-ingrese la Nueva
-                        Contarseña</label>
-                      <div class="col-md-8 col-lg-9">
-                        <input name="renewpassword" type="password" class="form-control" id="renewPassword">
-                      </div>
-                    </div>
-
-                    <div class="text-center">
-                      <button id="changePasswordButton" type="submit" class="btn btn-primary">Change Password</button>
-                    </div>
-                    <!-- End Change Password Form -->
-
-                </div>
-
-              </div><!-- End Bordered Tabs -->
-
-            </div>
-          </div>
-
-        </div>
       </div>
+
     </section>
 
   </main><!-- End #main -->
@@ -530,10 +358,52 @@
   <script src="assets/vendor/tinymce/tinymce.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
-  <!-- Scripts -->
+  <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  <script src="assets/js/estudiante-profile.js"></script>
-  <script src="assets/js/profesor-profile.js"></script>
+  <script src="assets/js/Dashboard_profesor.js"></script>
+  <script src="assets/js/Dashboard_estudiante.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const token = localStorage.getItem("token"); // Obtiene el token del localStorage
+
+      fetch("https://localhost:44370/api/curso/estudiante/cursos", {
+        method: "GET",
+        headers: {
+          Authorization: "Bearer " + token,
+        },
+      })
+        .then(response => response.json())
+        .then(data => {
+          const cursosRow = document.getElementById('cursosRow');
+          if (data.length > 0) {
+            data.forEach(curso => {
+              const col = document.createElement('div');
+              col.classList.add('col-md-3');
+              col.innerHTML = `
+              <div class="curso-card">
+                <img src="assets/img/card.jpg" class="card-img card-img-top" alt="...">
+                <div class="card-body">
+                  <a href="#">
+                    <h5 class="card-title" title="${curso.NombreCurso}">${curso.NombreCurso}</h5>
+                  </a>
+                  <p class="card-text" title="${curso.Descripcion}"><strong>Código:</strong> ${curso.CodigoCurso} <br> 
+                      <strong>Descripción:</strong> ${curso.Descripcion}</p>
+                </div>
+              </div>
+              `;
+              cursosRow.appendChild(col);
+            });
+          } else {
+            cursosRow.innerHTML = '<p>No hay cursos disponibles.</p>';
+          }
+        })
+        .catch(error => {
+          console.error('Error al obtener los cursos:', error);
+          document.getElementById('cursosSection').innerHTML = '<p>Ocurrió un error al obtener los cursos.</p>';
+        });
+    });
+  </script>
 
 </body>
 
