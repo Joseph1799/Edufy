@@ -9,6 +9,7 @@ using System.Net;
 using System.Net.Http;
 using System.Security.Claims;
 using System.Text;
+using System.Threading;
 using System.Web.Http;
 
 namespace Edufy_API.Controllers
@@ -86,5 +87,130 @@ namespace Edufy_API.Controllers
             }
         }
 
+        // GET: api/Curso/estudiante/cursos
+        [HttpGet]
+        [Route("api/curso/estudiante/tareas-de-curso")]
+        public IHttpActionResult TareasDeCursoDeEstudiante(int idCurso)
+        {
+            var authorizationHeader = Request.Headers.Authorization;
+            if (authorizationHeader == null || authorizationHeader.Scheme != "Bearer")
+            {
+                return Unauthorized();
+            }
+
+            var token = authorizationHeader.Parameter;
+            if (string.IsNullOrEmpty(token))
+            {
+                return Unauthorized();
+            }
+
+            var tokenHandler = new JwtSecurityTokenHandler();
+            var key = Encoding.ASCII.GetBytes("tu_clave_secreta_para_generar_el_token");
+            var validationParameters = new TokenValidationParameters
+            {
+                ValidateIssuerSigningKey = true,
+                IssuerSigningKey = new SymmetricSecurityKey(key),
+                ValidateIssuer = false,
+                ValidateAudience = false,
+                ClockSkew = TimeSpan.Zero
+            };
+
+            try
+            {
+                SecurityToken validatedToken;
+                var principal = tokenHandler.ValidateToken(token, validationParameters, out validatedToken);
+                var idClaim = principal.FindFirst(ClaimTypes.Name);
+                if (idClaim == null)
+                {
+                    return Unauthorized();
+                }
+                try
+                {
+                    var idEstudiante = int.Parse(idClaim.Value);
+                    var tareas = TareaDAO.TareasDeCursoDeEstudiante(idEstudiante,idCurso);
+                    return Ok(tareas);
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("Error al obtener las tareas del estudiante.", ex);
+                }
+            }
+            catch (SecurityTokenException)
+            {
+                return Unauthorized();
+            }
+        }
+
+        // GET: api/Curso/estudiante/cursos
+        [HttpGet]
+        [Route("api/curso/tareascurso")]
+        public IHttpActionResult TareasDeCurso(int idCurso)
+        {
+                try
+                {
+                    var tareas = TareaDAO.TareasDeCurso(idCurso);
+                    return Ok(tareas);
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("Error al obtener las tareas del estudiante.", ex);
+                }
+        }
+
+        [HttpPost]
+        [Route("api/curso/creartarea/{idCurso}")]
+        public IHttpActionResult CrearTarea(int idCurso, [FromBody] Tarea tarea)
+        {
+            var authorizationHeader = Request.Headers.Authorization;
+            if (authorizationHeader == null || authorizationHeader.Scheme != "Bearer")
+            {
+                return Unauthorized();
+            }
+
+            var token = authorizationHeader.Parameter;
+            if (string.IsNullOrEmpty(token))
+            {
+                return Unauthorized();
+            }
+
+            var tokenHandler = new JwtSecurityTokenHandler();
+            var key = Encoding.ASCII.GetBytes("tu_clave_secreta_para_generar_el_token");
+            var validationParameters = new TokenValidationParameters
+            {
+                ValidateIssuerSigningKey = true,
+                IssuerSigningKey = new SymmetricSecurityKey(key),
+                ValidateIssuer = false,
+                ValidateAudience = false,
+                ClockSkew = TimeSpan.Zero
+            };
+
+            try
+            {
+                SecurityToken validatedToken;
+                var principal = tokenHandler.ValidateToken(token, validationParameters, out validatedToken);
+                var idClaim = principal.FindFirst(ClaimTypes.Name);
+                if (idClaim == null)
+                {
+                    return Unauthorized();
+                }
+                try
+                {
+                    var idProfesor = int.Parse(idClaim.Value);
+                    TareaDAO.CrearTarea(tarea, idCurso, idProfesor);
+                    return Ok();
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("Error al obtener los cursos del estudiante.", ex);
+                }
+            }
+            catch (SecurityTokenException)
+            {
+                return Unauthorized();
+            }
+        }
+
     }
+
 }
+

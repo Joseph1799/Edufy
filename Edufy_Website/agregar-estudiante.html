@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Pages / Register - NiceAdmin Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <main>
+    <div class="container">
+
+      <section class="section register min-vh-100 d-flex flex-column align-items-center justify-content-center py-4">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
+
+              <div class="d-flex justify-content-center py-4">
+                <a href="index.html" class="logo d-flex align-items-center w-auto">
+                  <img src="assets/img/logo.png" alt="">
+                  <span class="d-none d-lg-block">Edufy</span>
+                </a>
+              </div><!-- End Logo -->
+
+              <div class="card mb-3">
+
+                <div class="card-body">
+
+                  <div class="pt-4 pb-2">
+                    <h5 class="card-title text-center pb-0 fs-4">Inscribir nuevo estudiante</h5>
+                    <p class="text-center small">Ingresa los datos del nuevo estudiante a inscribir</p>
+                  </div>
+
+                  <form class="row g-3 needs-validation" novalidate>
+                    <div class="col-12">
+                      <label for="yourName" class="form-label">Nombre</label>
+                      <input type="text" name="name" class="form-control" id="yourName" required>
+                      <div class="invalid-feedback">Por favor, ingrese un nombre</div>
+                    </div>
+
+                    <div class="col-12">
+                      <label for="yourLastName" class="form-label">Apellido</label>
+                      <input type="text" name="lastName" class="form-control" id="yourLastName" required>
+                      <div class="invalid-feedback">Por favor, ingrese un apellido</div>
+                    </div>
+
+                    <div class="col-12">
+                      <label for="yourId" class="form-label">Cédula</label>
+                      <input type="text" name="Id" class="form-control" id="yourId" required>
+                      <div id="cedula-error-message" class="invalid-feedback"></div>
+                    </div>
+
+                    <div class="col-12">
+                      <label for="yourEmail" class="form-label">Correo Electronico</label>
+                      <div class="input-group has-validation">
+                        <span class="input-group-text" id="inputGroupPrepend">@</span>
+                        <input type="email" name="email" class="form-control" id="yourEmail" required>
+                        <div class="invalid-feedback">Por favor, ingresa un email.</div>
+                      </div>
+                    </div>
+
+
+                    <div class="col-12">
+                      <label for="youBirthDate" class="form-label">Fecha de Nacimiento</label>
+                      <input type="date" name="BirthDate" class="form-control" id="youBirthDate" required>
+                      <div class="invalid-feedback">Por favor, ingrese una fecha</div>
+                    </div>
+
+                    <div class="col-12">
+                      <label for="profile-gender" class="col-md-4 col-lg-3 col-form-label">Género</label>
+                      <select name="profile-gender" type="text" class="form-select" id="profile-gender" required>
+                        <option selected disabled value="">Seleccione un género</option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Femenino">Femenino</option>
+                      </select>
+                      <div class="invalid-feedback">Por favor, seleccione un género</div>
+                    </div>
+
+                    <div class="col-12">
+                      <label for="yourCareer" class="col-md-4 col-lg-3 col-form-label">Carrera</label>
+                      <select name="carrera" type="text" class="form-select" id="yourCareer" required>
+                        <option selected disabled value="">Seleccione una carrera</option>
+                        <option value="Ingeniería en Informatica">Ingeniería en Informatica</option>
+                        <option value="Ingeniería Biomédica">Ingeniería Biomédica</option>
+                        <option value="Administración de Empresas">Administración de Empresas</option>
+                        <option value="Arquitectura">Arquitectura</option>
+                        <option value="Biología">Biología</option>
+                        <option value="Ciencias Ambientales">Ciencias Ambientales</option>
+                        <option value="Ciencias de la Comunicación">Ciencias de la Comunicación</option>
+                        <option value="Ciencias de la Educación">Ciencias de la Educación</option>
+                        <option value="Ciencias Políticas">Ciencias Políticas</option>
+                        <option value="Derecho">Derecho</option>
+                        <option value="Diseño Gráfico">Diseño Gráfico</option>
+                        <option value="Economía">Economía</option>
+                        <option value="Enfermería">Enfermería</option>
+                        <option value="Física">Física</option>
+                        <option value="Geografía">Geografía</option>
+                        <option value="Historia">Historia</option>
+                        <option value="Ingeniería Civil">Ingeniería Civil</option>
+                        <option value="Ingeniería de Sistemas">Ingeniería de Sistemas</option>
+                        <option value="Ingeniería Eléctrica">Ingeniería Eléctrica</option>
+                        <option value="Ingeniería Industrial">Ingeniería Industrial</option>
+                        <option value="Ingeniería Mecánica">Ingeniería Mecánica</option>
+                        <option value="Ingeniería Química">Ingeniería Química</option>
+                        <option value="Medicina">Medicina</option>
+                        <option value="Psicología">Psicología</option>
+                        <option value="Publicidad">Publicidad</option>
+                        <option value="Relaciones Internacionales">Relaciones Internacionales</option>
+                        <option value="Sociología">Sociología</option>
+                        <option value="Turismo">Turismo</option>
+                      </select>
+                      <div class="invalid-feedback">Por favor, seleccione una carrera</div>
+                    </div>
+
+                    <div class="col-12">
+                      <label for="yourPassword" class="form-label">Contraseña</label>
+                      <input type="password" name="password" class="form-control" id="yourPassword" required>
+                      <div class="invalid-feedback">Por favor, ingrese una contraseña</div>
+                    </div>
+
+                    <div id="successMessage" class="alert alert-success d-none" role="alert">
+                      ¡El registro se realizó exitosamente!
+                    </div>
+
+                    <div class="col-12">
+                      <button class="btn btn-primary w-100" type="submit">Agregar Estudiante</button>
+                    </div>
+                  </form>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+    </div>
+  </main><!-- End #main -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/chart.js/chart.umd.js"></script>
+  <script src="assets/vendor/echarts/echarts.min.js"></script>
+  <script src="assets/vendor/quill/quill.min.js"></script>
+  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/agregar_estudiante.js"></script>
+
+</body>
+
+</html>

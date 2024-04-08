@@ -241,7 +241,7 @@
             </li>
 
             <li>
-              <a class="dropdown-item d-flex align-items-center" href="">
+              <a class="dropdown-item d-flex align-items-center" href="ayuda.html">
                 <i class="bi bi-question-circle"></i>
                 <span>Ayuda?</span>
               </a>
@@ -301,7 +301,7 @@
       </li><!-- End Inbox Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="">
+        <a class="nav-link collapsed" href="ayuda.html">
           <i class="bi bi-question-circle"></i>
           <span>Ayuda</span>
         </a>
@@ -318,7 +318,7 @@
       <h1>Cursos</h1>
       <nav>
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+          <li class="breadcrumb-item"><a href="Dashboard.html">Inicio</a></li>
           <li class="breadcrumb-item active">Cursos</li>
         </ol>
       </nav>
@@ -362,48 +362,8 @@
   <script src="assets/js/main.js"></script>
   <script src="assets/js/Dashboard_profesor.js"></script>
   <script src="assets/js/Dashboard_estudiante.js"></script>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const token = localStorage.getItem("token"); // Obtiene el token del localStorage
-
-      fetch("https://localhost:44370/api/curso/estudiante/cursos", {
-        method: "GET",
-        headers: {
-          Authorization: "Bearer " + token,
-        },
-      })
-        .then(response => response.json())
-        .then(data => {
-          const cursosRow = document.getElementById('cursosRow');
-          if (data.length > 0) {
-            data.forEach(curso => {
-              const col = document.createElement('div');
-              col.classList.add('col-md-3');
-              col.innerHTML = `
-              <div class="curso-card">
-                <img src="assets/img/card.jpg" class="card-img card-img-top" alt="...">
-                <div class="card-body">
-                  <a href="#">
-                    <h5 class="card-title" title="${curso.NombreCurso}">${curso.NombreCurso}</h5>
-                  </a>
-                  <p class="card-text" title="${curso.Descripcion}"><strong>Código:</strong> ${curso.CodigoCurso} <br> 
-                      <strong>Descripción:</strong> ${curso.Descripcion}</p>
-                </div>
-              </div>
-              `;
-              cursosRow.appendChild(col);
-            });
-          } else {
-            cursosRow.innerHTML = '<p>No hay cursos disponibles.</p>';
-          }
-        })
-        .catch(error => {
-          console.error('Error al obtener los cursos:', error);
-          document.getElementById('cursosSection').innerHTML = '<p>Ocurrió un error al obtener los cursos.</p>';
-        });
-    });
-  </script>
+  <script src="assets/js/estudiante_cursos.js"></script>
+  <script src="assets/js/profesor_cursos.js"></script>
 
 </body>
 

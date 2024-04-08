@@ -56,11 +56,6 @@ function cargarScript(rol) {
           var nombre = data.Nombre;
           var apellido = data.Apellido;
           var carrera = data.Carrera;
-          var correoElectronico = data.CorreoElectronico;
-          var id = data.Id;
-          var fechaNacimiento = data.FechaNacimiento;
-          var anioIngreso = data.AnioIngreso;
-          var genero = data.Genero;
 
           if (fotoPerfil !== "") {
             document.getElementById("profile-img").src = fotoPerfil;

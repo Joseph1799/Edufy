@@ -60,7 +60,7 @@ namespace Edufy_API.Controllers
             new Claim("CorreoElectronico", estudiante.CorreoElectronico),
             new Claim("Rol", loginRequest.Rol)
                 }),
-                Expires = DateTime.UtcNow.AddHours(1),
+                Expires = DateTime.UtcNow.AddHours(5),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
             };
             var token = tokenHandler.CreateToken(tokenDescriptor);
@@ -239,8 +239,20 @@ namespace Edufy_API.Controllers
             }
         }
 
-
-
+        [HttpGet]
+        [Route("api/estudiante/todos-los-estudiantes")]
+        public IHttpActionResult ObtenerTodosLosEstudiantes()
+        {
+            try
+            {
+                IEnumerable<Estudiante> estudiantes = EstudianteDAO.ObtenerTodosLosEstudiantes();
+                return Ok(estudiantes);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al obtener los estudiantes.", ex);
+            }
+        }
 
     }
 }

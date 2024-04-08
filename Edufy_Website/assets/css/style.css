@@ -926,6 +926,80 @@ h6 {
   margin-left: 95px;
 }
 
+/* Tareas Pendientes en Curso */
+.card .tareas .post-item {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: rgb(243, 243, 243);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: #f6f9ff;
+  }
+}
+
+.card .card-header {
+  display: block;
+  width: 100%;
+}
+
+.card .card-header h4 {
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #00315f;
+}
+
+.card .card-header h6 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #00315f;
+}
+
+.card .card-header h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #283541;
+}
+
+.card .tareas .post-item img {
+  width: 50px;
+  float: left;
+  margin-left: 5px;
+  border-radius: 50px;
+}
+
+.card .tareas .post-item .post-content {
+  flex-grow: 1;
+  padding-top: 10px;
+}
+
+.card .tareas .post-item h4 {
+  margin-left: 10px;
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.card .tareas .post-item h4 a {
+  color: #005772;
+  transition: 0.3s;
+}
+
+.card .tareas .post-item h4 a:hover {
+  color: #00b4eb;
+}
+
+.card .tareas .post-item p {
+  font-size: 14px;
+  color: #777777;
+  margin-left: 10px;
+}
+
 /* Media Queries */
 
 @media (min-width: 0px) {
@@ -1131,8 +1205,6 @@ h6 {
 # Courses
 --------------------------------------------------------------*/
 
-
-
 .curso-card {
   padding: 0;
   margin-bottom: 30px;
@@ -1145,7 +1217,7 @@ h6 {
 
   &:hover {
     box-shadow: 0px 0 30px rgba(0, 0, 0, 0.7);
-    transform: scale(1.05);
+    transform: scale(1.02);
     transition: transform 0.5s ease;
   }
 }

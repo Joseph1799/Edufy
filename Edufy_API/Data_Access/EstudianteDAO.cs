@@ -194,6 +194,39 @@ namespace Edufy_API.Data_Access
             }
         }
 
+        internal static IEnumerable<Estudiante> ObtenerTodosLosEstudiantes()
+        {
+            String connectionString = Connection.connectionRoute;
+            String query = "SELECT * FROM Estudiante";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                SqlCommand command = new SqlCommand(query, connection);
+                List<Estudiante> estudiantes = new List<Estudiante>();
+                try
+                {
+                    connection.Open();
+                    SqlDataReader reader = command.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        Estudiante estudiante = new Estudiante
+                        {
+                            Id = (int)reader["Id"],
+                            Nombre = (string)reader["Nombre"],
+                            Apellido = (string)reader["Apellido"],
+                            CorreoElectronico = (string)reader["CorreoElectronico"],
+                        };
+                        estudiantes.Add(estudiante);
+                    }
+                    return estudiantes;
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("Error al obtener los estudiantes.", ex);
+                }
+
+            }
+        }
 
     }
 }

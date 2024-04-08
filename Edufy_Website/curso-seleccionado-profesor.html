@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Pages / Contact - NiceAdmin Bootstrap Template</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+    <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+
+        <div class="d-flex align-items-center justify-content-between">
+            <a href="Dashboard.html" class="logo d-flex align-items-center">
+                <img src="assets/img/logo.png" alt="">
+                <span class="d-none d-lg-block">Edufy</span>
+            </a>
+            <i class="bi bi-list toggle-sidebar-btn"></i>
+        </div><!-- End Logo -->
+
+        <div class="search-bar">
+            <form class="search-form d-flex align-items-center" method="POST" action="#">
+                <input type="text" name="query" placeholder="Buscar curso" title="Enter search keyword">
+                <button type="submit" title="Search"><i class="bi bi-search"></i></button>
+            </form>
+        </div><!-- End Search Bar -->
+
+        <nav class="header-nav ms-auto">
+            <ul class="d-flex align-items-center">
+
+                <li class="nav-item d-block d-lg-none">
+                    <a class="nav-link nav-icon search-bar-toggle " href="#">
+                        <i class="bi bi-search"></i>
+                    </a>
+                </li><!-- End Search Icon-->
+
+                <li class="nav-item dropdown">
+
+                    <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+                        <i class="bi bi-bell"></i>
+                        <span class="badge bg-primary badge-number">4</span>
+                    </a><!-- End Notification Icon -->
+
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
+                        <li class="dropdown-header">
+                            Tiene 4 notificaciones
+                            <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">Ver todo</span></a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li class="notification-item">
+                            <i class="bi bi-exclamation-circle text-warning"></i>
+                            <div>
+                                <h4>Lorem Ipsum</h4>
+                                <p>Quae dolorem earum veritatis oditseno</p>
+                                <p>30 min. ago</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li class="notification-item">
+                            <i class="bi bi-x-circle text-danger"></i>
+                            <div>
+                                <h4>Atque rerum nesciunt</h4>
+                                <p>Quae dolorem earum veritatis oditseno</p>
+                                <p>1 hr. ago</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li class="notification-item">
+                            <i class="bi bi-check-circle text-success"></i>
+                            <div>
+                                <h4>Sit rerum fuga</h4>
+                                <p>Quae dolorem earum veritatis oditseno</p>
+                                <p>2 hrs. ago</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li class="notification-item">
+                            <i class="bi bi-info-circle text-primary"></i>
+                            <div>
+                                <h4>Dicta reprehenderit</h4>
+                                <p>Quae dolorem earum veritatis oditseno</p>
+                                <p>4 hrs. ago</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li class="dropdown-footer">
+                            <a href="#">Mostrar todas las notificaciones</a>
+                        </li>
+
+                    </ul><!-- End Notification Dropdown Items -->
+
+                </li><!-- End Notification Nav -->
+
+                <li class="nav-item dropdown">
+
+                    <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+                        <i class="bi bi-chat-left-text"></i>
+                        <span class="badge bg-success badge-number">3</span>
+                    </a><!-- End Messages Icon -->
+
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
+                        <li class="dropdown-header">
+                            Tiene 3 mensajes nuevos
+                            <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">Ver todo</span></a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li class="message-item">
+                            <a href="#">
+                                <img src="assets/img/messages-1.jpg" alt="" class="rounded-circle">
+                                <div>
+                                    <h4>Maria Hudson</h4>
+                                    <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                                    <p>4 hrs. ago</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li class="message-item">
+                            <a href="#">
+                                <img src="assets/img/messages-2.jpg" alt="" class="rounded-circle">
+                                <div>
+                                    <h4>Anna Nelson</h4>
+                                    <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                                    <p>6 hrs. ago</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li class="message-item">
+                            <a href="#">
+                                <img src="assets/img/messages-3.jpg" alt="" class="rounded-circle">
+                                <div>
+                                    <h4>David Muldon</h4>
+                                    <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                                    <p>8 hrs. ago</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li class="dropdown-footer">
+                            <a href="#">Mostrar todos los mensajes</a>
+                        </li>
+
+                    </ul><!-- End Messages Dropdown Items -->
+
+                </li><!-- End Messages Nav -->
+
+                <li class="nav-item dropdown pe-3">
+
+                    <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+                        <img id="profile-img" src="" alt="Profile" class="rounded-circle">
+                        <span id="profile-name" class="d-none d-md-block dropdown-toggle ps-2"></span>
+                    </a>
+                    <!-- End Profile Image Icon -->
+
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+                        <li class="dropdown-header">
+                            <h6 id="profile-name2"></h6>
+                            <span id="profile-career"></span>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                                <i class="bi bi-person"></i>
+                                <span>Cuenta</span>
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="">
+                                <i class="bi bi-gear"></i>
+                                <span>Preferencias de Cuenta</span>
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="ayuda.html">
+                                <i class="bi bi-question-circle"></i>
+                                <span>Ayuda?</span>
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="index.html">
+                                <i class="bi bi-box-arrow-right"></i>
+                                <span>Salir</span>
+                            </a>
+                        </li>
+
+                    </ul><!-- End Profile Dropdown Items -->
+                </li><!-- End Profile Nav -->
+
+            </ul>
+        </nav><!-- End Icons Navigation -->
+
+    </header><!-- End Header -->
+
+    <!-- ======= Sidebar ======= -->
+    <aside id="sidebar" class="sidebar">
+
+        <ul class="sidebar-nav" id="sidebar-nav">
+
+            <li class="nav-item">
+                <a class="nav-link " href="Dashboard.html">
+                    <i class="bi bi-grid"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li><!-- End Dashboard Nav -->
+
+            <li class="nav-heading">Menú</li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="users-profile.html">
+                    <i class="bi bi-person"></i>
+                    <span>Cuenta</span>
+                </a>
+            </li><!-- End Cuenta Page Nav -->
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="courses.html">
+                    <i class="bi bi-stack"></i>
+                    <span>Cursos</span>
+                </a>
+            </li><!-- End Cursos Page Nav -->
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="">
+                    <i class="bi bi-envelope"></i>
+                    <span>Inbox</span>
+                </a>
+            </li><!-- End Inbox Page Nav -->
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="ayuda.html">
+                    <i class="bi bi-question-circle"></i>
+                    <span>Ayuda</span>
+                </a>
+            </li><!-- End Ayuda Page Nav -->
+
+        </ul>
+
+    </aside>
+    <!-- End Sidebar-->
+
+    <main id="main" class="main">
+
+        <div class="pagetitle">
+            <h1>Curso Seleccionado</h1>
+            <nav>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="Dashboard.html">Inicio</a></li>
+                    <li class="breadcrumb-item"><a href="courses.html">Cursos</a></li>
+                    <li class="breadcrumb-item active">Curso Seleccionado</li>
+                </ol>
+            </nav>
+        </div><!-- End Page Title -->
+
+        <section class="section contact" id="cursosSection">
+
+            <div class="row" id="cursosRow">
+
+                <div class="card">
+                    <div class="card-header">
+                        <h6 class="card-title" id="Nombre-Curso">NombreCurso</h6>
+                        <h4>Profesor</h4>
+                        <h3 id="Nombre-Profesor">NombreProfesor</h3>
+                        <h3 id="Correo-Profesor">Correo</h3>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Descripcion del Curso</h5>
+                        <small id="Descripcion-Curso"> Ut in ea error laudantium quas omnis officia. Sit sed praesentium
+                            voluptas. Corrupti
+                            inventore
+                            consequatur nisi necessitatibus modi consequuntur soluta id. Enim autem est esse natus
+                            assumenda. Non sunt dignissimos officiis expedita. Consequatur sint repellendus voluptas.
+                            Quidem sit est nulla ullam. Suscipit debitis ullam iusto dolorem animi dolorem numquam. Enim
+                            fuga ipsum dolor nulla quia ut.
+                            Rerum dolor voluptatem et deleniti libero totam numquam nobis distinctio. Sit sint aut.
+                            Consequatur rerum in.</small>
+                    </div>
+                    <div class="card-footer">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Estudiantes Inscritos</h5>
+
+                                <!-- Default Accordion -->
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                aria-expanded="false" aria-controls="collapseOne">
+                                                Ampliar la lista de estudiantes
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse"
+                                            aria-labelledby="headingOne" data-bs-parent="#accordionExample" style="">
+                                            <div class="accordion-body">
+                                                <div class="card">
+                                                    <div class="card-body">
+
+                                                        <!-- Table with stripped rows -->
+                                                        <table class="table table-striped">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col">Nombre</th>
+                                                                    <th scope="col">Correo Electronico</th>
+                                                                    <th scope="col"></th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <!--<tr>
+                                                                    <td>NombreEstudiante</td>
+                                                                    <td>CorreoEstudiante</td>
+                                                                    <td>
+                                                                        <button class="btn btn-outline-danger btn-sm">Remover</button>
+                                                                    </td>
+                                                                </tr> -->
+                                                            </tbody>
+                                                        </table>
+                                                        <button class="btn btn-primary btn-sm"
+                                                            style="margin-bottom: 15px;" id="agregar-estudiante">Agregar
+                                                            Estudiante</button>
+                                                        <div id="successMessage" class="alert alert-success d-none"
+                                                            role="alert">
+                                                            ¡El registro se realizó exitosamente!
+                                                        </div>
+                                                        <div id="successMessage2" class="alert alert-success d-none"
+                                                            role="alert">
+                                                            ¡Estudiante Removido del Curso Exitosamente!
+                                                        </div>
+                                                        <div class="card" id="card-estudiantes" style="display: none;">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">Seleccione un Estudiante o
+                                                                    Registre uno Nuevo</h5>
+
+                                                                <a href="agregar-estudiante.html">
+                                                                    <button type="button"
+                                                                        class="btn btn-outline-primary btn-sm"
+                                                                        style="margin-bottom: 15px;">Registrar Nuevo
+                                                                        Estudainte</button>
+                                                                </a>
+
+                                                                <!-- List group with Links and buttons -->
+                                                                <div class="list-group">
+                                                                    <!-- <button type="button"
+                                                                        class="list-group-item list-group-item-action">
+                                                                        Estudiante 1
+                                                                    </button> -->
+                                                                </div><!-- End List group with Links and buttons -->
+
+                                                            </div>
+                                                        </div>
+                                                        <!-- End Table with stripped rows -->
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- End Default Accordion Example -->
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+
+                        <!-- Tareas Pendientes -->
+                        <div class="card">
+
+                            <div class="card-body pb-0">
+
+                                <div class="tareas">
+                                    <h5 class="card-title">Tareas Creadas</h5>
+
+                                    <!--                                     <div class="post-item clearfix">
+                                        <img src="assets/img/PendingTask.jpg" alt="">
+                                        <div class="post-content">
+                                            <h4><a href="#">Inauguración de un Nuevo Edificio</a></h4>
+                                            <p>La Universidad Inaugura un Edificio de Tecnología Avanzada para
+                                                Estudiantes de Ingeniería</p>
+                                        </div>
+                                    </div> -->
+
+                                </div><!-- End sidebar recent posts-->
+                                <button class="btn btn-outline-primary btn-sm" id="mostrarFormulario"
+                                    style="margin-bottom: 20px;">Crear Nueva
+                                    Tarea</button>
+                                <div id="successMessage3" class="alert alert-success d-none" role="alert">
+                                    ¡Tarea Creada Exitosamente!
+                                </div>
+                                <div class="card mt-3" id="formulario" style="display: none;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Crear Tarea</h5>
+
+                                        <!-- General Form Elements -->
+                                        <form class="needs-validation" novalidate>
+                                            <div class="row mb-3">
+                                                <label for="inputText" class="col-sm-2 col-form-label">Título de la
+                                                    Tarea</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" id="tareaTitulo" required>
+                                                    <div id="error-message-titulo" class="invalid-feedback">Por favor,
+                                                        ingrese un titulo</div>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="inputNumber" class="col-sm-2 col-form-label">Subir
+                                                    Archivo</label>
+                                                <div class="col-sm-10">
+                                                    <input class="form-control" type="file" id="formFile">
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="inputDate" class="col-sm-2 col-form-label">Fecha de
+                                                    Entrega</label>
+                                                <div class="col-sm-10">
+                                                    <input type="date" class="form-control" id="tareaFecha" required>
+                                                    <div id="error-message-fecha" class="invalid-feedback">Por favor,
+                                                        ingrese una fecha</div>
+                                                </div>
+
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="inputPassword" class="col-sm-2 col-form-label">Descripcion
+                                                    de la Tarea</label>
+                                                <div class="col-sm-10">
+                                                    <textarea class="form-control" style="height: 100px"
+                                                        id="tareaDesc"></textarea>
+                                                    <div id="error-message-desc" class="invalid-feedback">Por favor,
+                                                        ingrese una descripción</div>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label class="col-sm-2 col-form-label"></label>
+                                                <div class="col-sm-10">
+                                                    <button type="button" id="enviarTareaBtn"
+                                                        class="btn btn-primary">Enviar Tarea</button>
+                                                </div>
+                                            </div>
+
+                                        </form><!-- End General Form Elements -->
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- End Tareas Pendientes -->
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main><!-- End #main -->
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/chart.js/chart.umd.js"></script>
+    <script src="assets/vendor/echarts/echarts.min.js"></script>
+    <script src="assets/vendor/quill/quill.min.js"></script>
+    <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+    <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/Dashboard_profesor.js"></script>
+    <script src="assets/js/Dashboard_estudiante.js"></script>
+    <script src="assets/js/curso_seleccionado_profesor.js"></script>
+    <script src="assets/js/crear_tarea.js"></script>
+    <script src="assets/js/agregar_estudiante_curso.js"></script>
+
+</body>
+
+</html>
