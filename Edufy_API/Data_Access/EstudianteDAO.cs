@@ -228,6 +228,44 @@ namespace Edufy_API.Data_Access
             }
         }
 
+        public static IEnumerable<Object> EstudiantesConTareaEntregada(int idTarea)
+        {
+            String connectionString = Connection.connectionRoute;
+            String query = @"  SELECT e.*, te.entregada 
+              FROM Estudiante e
+              INNER JOIN TareaEstudiante te ON te.IdEstudiante = e.ID
+              WHERE te.IdTarea = @IdTarea";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@IdTarea", idTarea);
+                List<Object> estudiantes = new List<Object>();
+                try
+                {
+                    connection.Open();
+                    SqlDataReader reader = command.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        var estudiante = new 
+                        {
+                            Id = (int)reader["Id"],
+                            Nombre = (string)reader["Nombre"],
+                            Apellido = (string)reader["Apellido"],
+                            CorreoElectronico = (string)reader["CorreoElectronico"],
+                            Entregada = (int)reader["entregada"],
+                        };
+                        estudiantes.Add(estudiante);
+                    }
+                    return estudiantes;
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("Error al obtener los estudiantes.", ex);
+                }
+            }
+
+        }
     }
 }
     

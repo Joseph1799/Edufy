@@ -293,6 +293,36 @@ namespace Edufy_API.Controllers
             }
         }
 
+        [HttpPut]
+        [Route("api/curso/agregar-estudiante-a-grupo")]
+        public IHttpActionResult AgregarEstudianteAGrupo(int idEstudiante, int idCurso, int numGrupo)
+        {
+            if (idEstudiante == 0 && idCurso == 0)
+            {
+                return BadRequest();
+            }
+            else
+            {
+                CursoDAO.AgregarEstudianteAGrupo(idEstudiante, idCurso, numGrupo);
+                return Ok("Estudiante agregado exitosamente en el grupo");
+            }
+        }
+
+        [HttpGet]
+        [Route("api/curso/estudiantes-de-grupo")]
+        public IHttpActionResult EstudiantesDeGrupo(int idCurso, int numGrupo)
+        {
+            try
+            {
+                IEnumerable<Estudiante> estudiantes = CursoDAO.OtenerEstudiantesPorGrupo(idCurso, numGrupo);
+                return Ok(estudiantes);
+            }
+            catch (Exception ex)
+            {
+                return InternalServerError(ex);
+            }
+        }
+
     }
 
 }

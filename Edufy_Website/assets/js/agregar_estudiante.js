@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
           document.getElementById("successMessage").classList.remove("d-none");
           // Redirigir a otro HTML después de 2 segundos
           setTimeout(function () {
-            window.location.href = "curso-seleccionado-profesor.html";
+            history.back();
           }, 2000);
         } else {
           throw new Error("Error al registrar estudiante");

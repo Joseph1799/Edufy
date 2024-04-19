@@ -326,6 +326,76 @@ namespace Edufy_API.Data_Access
             }
         }
 
+        public static void AgregarEstudianteAGrupo(int idEstudiante, int idCurso, int numGrupo)
+        {
+            string connectionString = Connection.connectionRoute;
+            string query = @"
+                            UPDATE InscripcionesCurso
+                            SET NumGrupo = @numGrupo
+                            WHERE idEstudiante = @idEstudiante
+                            AND idCurso = @idCurso";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@numGrupo", numGrupo);
+                command.Parameters.AddWithValue("@idEstudiante", idEstudiante);
+                command.Parameters.AddWithValue("@idCurso", idCurso);
+                try
+                {
+                    connection.Open();
+                    command.ExecuteNonQuery();
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("Error al agregar al estudiante en el grupo.", ex);
+                }
+            }
+        }
+
+        public static IEnumerable<Estudiante> OtenerEstudiantesPorGrupo(int idCurso, int numGrupo)
+        {
+            string connectionString = Connection.connectionRoute;
+            string query = @"
+                SELECT e.Nombre, e.Apellido, e.CorreoElectronico, e.Id
+                FROM InscripcionesCurso ic
+                JOIN Estudiante e ON ic.IdEstudiante = e.ID
+                WHERE ic.IdCurso = @idCurso
+                AND ic.NumGrupo = @numGrupo";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@idCurso", idCurso);
+                command.Parameters.AddWithValue("@numGrupo", numGrupo);
+                List<Estudiante> estudiantes = new List<Estudiante>();
+
+                try
+                {
+                    connection.Open();
+                    SqlDataReader reader = command.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        Estudiante estudiante = new Estudiante
+                        {
+                            Id = (int)reader["Id"],
+                            Nombre = (string)reader["Nombre"],
+                            Apellido = (string)reader["Apellido"],
+                            CorreoElectronico = (string)reader["CorreoElectronico"]
+                        };
+
+                        estudiantes.Add(estudiante);
+                    }
+                    return estudiantes;
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("Error al obtener los estudiantes de la base de datos.", ex);
+                }
+            }
+        }
+
         public class CursoDetallado
         {
             public string NombreCurso { get; set; }

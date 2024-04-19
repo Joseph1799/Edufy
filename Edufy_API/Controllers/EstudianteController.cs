@@ -254,5 +254,20 @@ namespace Edufy_API.Controllers
             }
         }
 
+        [HttpGet]
+        [Route("api/estudiante/estudiantes-con-tareas-entregadas/{idTarea}")]
+        public IHttpActionResult EstudiantesConTareaEntregada(int idTarea)
+        {
+            try
+            {
+                IEnumerable<Object> estudiantes = EstudianteDAO.EstudiantesConTareaEntregada(idTarea);
+                return Ok(estudiantes);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al obtener los estudiantes.", ex);
+            }
+        }
+
     }
 }

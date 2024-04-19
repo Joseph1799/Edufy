@@ -45,7 +45,8 @@ function obtenerInformacionCurso() {
           <div class="post-content">
               <h4><a href="#">${tarea.NombreTarea}</a></h4>
               <p>${tarea.Descripcion}</p>
-          </div>`;
+          </div>
+          <a onclick="EliminarTarea(${tarea.IdTarea})" class="btn btn-outline-danger btn-sm" style="margin-right:10px;" id="eliminar-tarea">Eliminar</a>`;
           tareasDiv.appendChild(postItem);
         });
       })
@@ -55,6 +56,8 @@ function obtenerInformacionCurso() {
           "<p>Ocurrió un error al obtener las tareas del curso.</p>";
       });
   }
+
+
 
   // Función para manejar el evento de click en el botón "Remover"
   function handleRemoverButtonClick(id) {
@@ -103,7 +106,7 @@ function obtenerInformacionCurso() {
 
             // Crear celdas para el nombre y correo electrónico del estudiante
             const nombreCell = document.createElement("td");
-            nombreCell.textContent = estudiante.Nombre;
+            nombreCell.textContent = estudiante.Nombre + " " + estudiante.Apellido;
 
             const correoCell = document.createElement("td");
             correoCell.textContent = estudiante.CorreoElectronico;
@@ -172,6 +175,26 @@ function obtenerInformacionCurso() {
 
         listGroup.appendChild(button);
       });
+    });
+}
+
+function EliminarTarea(idTarea) {
+  fetch(
+    `https://localhost:44370/api/curso/eliminar-tarea/${idTarea}`,
+    {
+      method: "DELETE",
+      headers: {},
+    }
+  )
+    .then((response) => {
+      obtenerInformacionCurso();
+      Swal.fire("Tarea Eliminada!");
+      if (!response.ok) {
+        throw new Error("No se pudo eliminar la tarea.");
+      }
+    })
+    .catch((error) => {
+      console.error("Error al eliminar la tarea:", error);
     });
 }
 
