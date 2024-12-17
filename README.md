@@ -71,6 +71,18 @@ We welcome contributions from developers, designers, and anyone interested in im
 5. Push to the branch (`git push origin feature-name`).
 6. Create a pull request.
 
+## App Screenshots and Mockups
+
+Below are the images showcasing the app interface and design.
+
+![image](https://github.com/user-attachments/assets/7e344fd9-56eb-44c6-aabe-87cd950a33ee)
+
+![image](https://github.com/user-attachments/assets/078b253e-ae05-45df-9528-68b93bbed0c2)
+
+![image](https://github.com/user-attachments/assets/01750327-1975-4d78-99a7-ba9f3a49e2f7)
+
+![image](https://github.com/user-attachments/assets/330318f7-fdcf-402e-8b64-e3904a37633e)
+
 ## License
 
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
@@ -78,3 +90,4 @@ This project is licensed under the [MIT License](https://opensource.org/licenses
 ## Contact
 
 For any questions or inquiries, please contact [Joseph Vargas Castro](mailto:joseph1799us@gmail.com).
+
