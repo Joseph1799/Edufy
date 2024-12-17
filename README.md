@@ -2,6 +2,9 @@
 
 Edufy is an innovative educational platform designed to enhance the learning experience in academic environments. With its intuitive interface and advanced features, Edufy facilitates seamless communication and collaboration between students and professors, creating a dynamic and efficient virtual learning environment.
 
+![image](https://github.com/user-attachments/assets/8178b98e-cf88-4949-b834-eaaeb14ded2a)
+
+
 ## Key Features
 
 - **Student-Teacher Interaction:** Instant messaging and discussion forums to enable real-time communication between students and professors.
